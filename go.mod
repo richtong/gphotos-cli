@@ -3,11 +3,11 @@ module richtong/gphotos-cli
 go 1.19
 
 require (
-	github.com/gphotosuploader/googlemirror v0.5.0
 	github.com/manifoldco/promptui v0.9.0
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/spf13/cobra v1.5.0
 	github.com/spf13/viper v1.12.0
+	github.com/trinhdrew1418/gphotos-cli v0.0.0-20190701062323-ed81d2e10a58
 	github.com/vbauerster/mpb v3.4.0+incompatible
 	golang.org/x/net v0.0.0-20220822230855-b0a4917ee28c
 	golang.org/x/oauth2 v0.0.0-20220822191816-0ebed06d0094
@@ -44,3 +44,5 @@ require (
 )
 
 //replace google.golang.org/photoslibrary => ./vendor/google.golang.org/api/photoslibrary
+// instead of replaces this with vendored point to the mirrrored one
+replace github.com/trinhdrew1418/gphotos-cli => github.com/richtong/gphotos-cli v1.0.0
